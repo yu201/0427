@@ -1,0 +1,32 @@
+<div class="left col-md-10"  >
+    <div class="tit" id="info">基本信息</div>
+    <div class="cont">
+        <p>责任人：<span>张鑫</span>  <span>13023948374</span></p>
+        <p>责任人单位：<span>南风里居委会</span></p>
+        <input type="text" id="name" placeholder="请输入栏目名称">
+    </div>
+    <input-File></input-File>
+    <div class="list">
+        <div class="tit" id="resident">评论区</div>
+        <ul>
+            <li ng-repeat="i in data" ><b>{{i.name}}说：{{i.cont}}</b><span>{{i.date | date:"yyyy-MM-dd HH:mm:ss"}}<em ng-click="speak(i.name)">回复</em></span></li>
+        </ul>
+        <textarea class="form-control" rows="3" ng-model="txt" ng-keydown="reply(txt)"></textarea>
+        <button type="button" class="btn btn-primary emit" ng-click="vray(txt)">发送</button>
+    </div>
+</div>
+<div class="right col-md-2" >
+
+    <nav id="navbar-example2" class="navbar nav-side">
+
+        <div class="timeline-wrap clearfix">
+            <span class="circle top"></span>
+            <ul class="nav navbar-nav time-line">
+                <li class=""><a data-target="#info">基本信息</a></li>
+                <li class="active"><a data-target="#name">请输入栏目名称</a></li>
+                <li class="dropdown"><a data-target="#resident">评论区</a></li>
+            </ul>
+        </div>
+
+    </nav>
+</div>
