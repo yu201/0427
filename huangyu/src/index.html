@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+<nav class="navbar navbar-default">
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav  navbar-right">
+                <li><a href="#">注册 </a></li>
+                <li><a href="#">登陆</a></li>
+                <li><a href="#">通知</a></li>
+                <li><a href="#">设置</a></li>
+
+            </ul>
+
+        </div><!-- /.navbar-collapse -->
+</nav>
+<nav class="container" style="background: #fff">
+    <div class="row">
+        <div class="col-md-2">
+            <a href="#" class="navbar-brand">三鑫智慧社区 </a>
+        </div>
+        <div class="col-md-10">
+            <ul class="nav text-center">
+                <li class="col-md-2" ui-sref="home"><a href="#" class="li2">首页</a></li>
+                <li class="col-md-2" ui-sref="community"><a href="#" class="li2">社区团体活动服务</a></li>
+                <li class="col-md-2" ui-sref="party"><a href="#">党组织活动服务</a></li>
+                <li class="col-md-2" ui-sref="resident"><a href="#">居民自治活动服务</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<nav class="container" style="height: 40px">
+    <div class="row">
+        <ol class="breadcrumb">
+            <li><a href="#">当前位置：</a></li>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">社区养老</a></li>
+            <li class="active">离休退休</li>
+        </ol>
+    </div>
+</nav>
+<section>
+   <div ui-view></div>
+</section>
+<script src="js/jquery-2.2.0.js"></script>
+<script src="../dist/js/bootstrap.min.js"></script>
+<script src="js/angular.js"></script>
+<script src="js/angular-ui-router.js"></script>
+<script src="js/app.js"></script>
+<script src="js/config.js"></script>
+<script src="js/directive.js"></script>
+
+</body>
+</html>

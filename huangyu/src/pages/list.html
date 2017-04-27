@@ -1,0 +1,45 @@
+<div class="left col-md-10"  >
+    <div class="tit" id="info">基本信息 <button ui-sref="community.cha" type="button" class="btn btn-info">返回</button></div>
+    <div class="cont">
+        <p>责任人：<span>张鑫</span>  <span>13023948374</span></p>
+        <p>责任人单位：<span>南风里居委会</span></p>
+        <input type="text" id="name" placeholder="请输入栏目名称">
+    </div>
+    <input-File></input-File>
+    <div class="list">
+        <div class="tit" id="resident">居民预约</div>
+        <p>
+            <label class="juming">
+                <b>姓名</b>
+                <input type="text" class="form-control" placeholder="请输入姓名">
+            </label >
+            <label class="juming">
+                <b>电话</b>
+                <input type="text" class="form-control" placeholder="请输入电话">
+            </label>
+        </p>
+        <p>
+            <label style="width: 100%">
+                <b>备注</b>
+                <input type="text" class="form-control" placeholder="请输入备注">
+            </label>
+        </p>
+
+        <button type="button" class="btn btn-primary emit">保存</button>
+    </div>
+</div>
+<div class="right col-md-2" >
+
+    <nav id="navbar-example2" class="navbar nav-side">
+
+        <div class="timeline-wrap clearfix">
+            <span class="circle top"></span>
+            <ul class="nav navbar-nav time-line">
+                <li class=""><a data-target="#info">基本信息</a></li>
+                <li class="active"><a data-target="#name">请输入栏目名称</a></li>
+                <li class="dropdown"><a data-target="#resident">居民预约</a></li>
+            </ul>
+        </div>
+
+    </nav>
+</div>
